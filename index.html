@@ -2,44 +2,201 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hamid Pro — Home</title>
+  <title>Hamid Tanveer — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0f172a;
-      color: #f1f5f9;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
       text-align: center;
-      flex-direction: column;
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #38bdf8;
     }
-    p {
-      font-size: 20px;
+
+    header p {
       color: #94a3b8;
     }
-    a {
-      color: #38bdf8;
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      border-bottom: 1px solid #334155;
+    }
+
+    nav a {
+      color: #f1f5f9;
       text-decoration: none;
-      margin-top: 20px;
-      display: inline-block;
+      margin: 0 15px;
       font-size: 18px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    nav a:hover {
+      color: #38bdf8;
     }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #334155;
+    }
+
+    .project-card h4 {
+      color: #f8fafc;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #94a3b8;
+      font-size: 16px;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .contact a:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Welcome to hamidpro.me</h1>
-  <p>This is my custom domain powered by GitHub Pages.</p>
-  <a href="mailto:hello@hamidpro.me">📧 Email Me</a>
+
+  <header>
+    <h1>Hamid Tanveer</h1>
+    <p>Freelancer | Web Developer | Domain Owner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <img src="https://raw.githubusercontent.com/Hamid-Pro/Hamid-Pro.github.io/main/assets/Photoroom-20240322_152324.png" alt="Hamid Tanveer">
+    <h2>Hello, I'm Hamid</h2>
+    <p>Welcome to my personal portfolio website. I build and customize web projects, manage domains, and explore tech around the clock.</p>
+  </div>
+
+  <div class="section" id="about">
+    <h3>About Me</h3>
+    <p>I'm a self-driven web developer, freelancer and GitHub Pages enthusiast. I love customizing domains, integrating services, and building slick, modern web layouts. I work with HTML, CSS, and open-source tools to deliver clean, responsive websites for clients and personal projects.</p>
+  </div>
+
+  <div class="section" id="projects">
+    <h3>My Projects</h3>
+    <div class="projects">
+      <div class="project-card">
+        <h4>Personal Website</h4>
+        <p>A fully responsive personal website hosted on GitHub Pages using a custom .me domain.</p>
+      </div>
+      <div class="project-card">
+        <h4>Email Forwarding System</h4>
+        <p>Custom domain email forwarding setup using ImprovMX with Gmail SMTP for sending branded emails securely.</p>
+      </div>
+      <div class="project-card">
+        <h4>Dark Themed Web Templates</h4>
+        <p>Collection of clean, modern, dark-mode web layouts optimized for mobile-first designs and domain integration.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h3>Contact Me</h3>
+    <div class="contact">
+      <p>Got a project, idea, or question? I'd love to hear from you.</p>
+      <a href="mailto:hello@hamidpro.me">📧 Email Me</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Hamid Tanveer — All Rights Reserved
+  </footer>
+
 </body>
 </html>
